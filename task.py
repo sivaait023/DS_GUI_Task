@@ -131,12 +131,12 @@ def login():
         print("Please attempt login again")
         login()
 
-
-mode = int(input("Select Mode : 1. Register | 2. Login : "))
-if mode == 1:
-  Register()
-elif mode == 2:
-  login()
-else:
-  print("Invalid mode :( ")
+while True:
+  mode = int(input("Select Mode : 1. Register | 2. Login : "))
+  if mode == 1:
+    Register()
+  elif mode == 2:
+    login()
+  else:
+    print("Invalid mode :( ")
 
